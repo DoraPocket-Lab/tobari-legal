@@ -3,31 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>とばり / Tobari — サポート・各種表記</title>
+<title>各種表記 — とばり / Tobari</title>
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, "Hiragino Sans", system-ui, sans-serif; line-height: 1.9;
-         max-width: 640px; margin: 0 auto; padding: 3rem 1.3rem 4rem; color: #1a1a1a; background: #fafafa; }
-  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #14151a; } a { color: #8ab4ff; } }
-  h1 { font-size: 1.6rem; letter-spacing: .04em; }
-  .lead { color: #666; font-size: .95rem; }
-  @media (prefers-color-scheme: dark) { .lead { color: #aaa; } }
-  ul { list-style: none; padding: 0; margin-top: 2rem; }
-  li { margin: .2rem 0; }
-  li a { display: block; padding: .9rem 1rem; border: 1px solid #ddd; border-radius: 12px; text-decoration: none;
-         color: inherit; font-size: 1rem; }
-  @media (prefers-color-scheme: dark) { li a { border-color: #2a2c33; } }
-  .meta { color: #999; font-size: .8rem; margin-top: 2.5rem; }
+  :root {
+    --bg:#0E0F13; --ink:#C6C8CD; --soft:#8C9098; --faint:#5E626A; --amber:#9C8A76;
+    --line:rgba(255,255,255,0.06);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:-apple-system,"Hiragino Sans",system-ui,sans-serif;
+    background:var(--bg); color:var(--ink);
+    line-height:1.95; letter-spacing:.02em;
+    max-width:660px; margin:0 auto; padding:3.4rem 1.4rem 5rem;
+    font-size:.88rem; font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  .brand { font-size:.78rem; letter-spacing:.35em; color:var(--amber); padding-left:.35em; }
+  .lead { color:var(--soft); font-size:.82rem; margin-top:.4rem; margin-bottom:2.6rem; }
+  nav { display:flex; gap:1.3rem; flex-wrap:wrap; margin-bottom:3rem; }
+  nav a { color:var(--soft); text-decoration:none; font-size:.8rem; border-bottom:1px solid transparent; }
+  nav a:hover { color:var(--ink); border-color:var(--amber); }
+  section { margin-bottom:3.2rem; }
+  h2 { font-size:.95rem; font-weight:400; color:var(--ink); letter-spacing:.06em;
+       padding-bottom:.5rem; border-bottom:1px solid var(--line); margin-bottom:1.2rem; }
+  h3 { font-size:.86rem; font-weight:400; color:var(--soft); margin-top:1.4rem; margin-bottom:.2rem; }
+  p { margin-bottom:.7rem; }
+  a { color:var(--amber); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  dl { display:grid; grid-template-columns:11em 1fr; gap:0 .9rem; }
+  dt { color:var(--faint); font-size:.82rem; padding:.55rem 0; border-bottom:1px solid var(--line); }
+  dd { padding:.55rem 0; border-bottom:1px solid var(--line); }
+  @media (max-width:520px){ dl{ grid-template-columns:1fr; } dt{ padding-bottom:0; border:none; } dd{ padding-top:.15rem; } }
+  footer { margin-top:1rem; color:var(--faint); font-size:.78rem; line-height:1.9; }
 </style>
 </head>
 <body>
-<h1>とばり / Tobari</h1>
-<p class="lead">寝る前・作業前の15分。頭を休める音。広告なし・買切。</p>
-<ul>
-  <li><a href="./privacy.html">プライバシーポリシー →</a></li>
-  <li><a href="./tokushoho.html">特定商取引法に基づく表記 →</a></li>
-  <li><a href="./refund.html">返金について →</a></li>
-</ul>
-<p class="meta">提供: 合同会社ドラポケット ／ お問い合わせ: contact@dra-pocket.com</p>
+  <p class="brand">と ば り</p>
+  <p class="lead">各種表記 ／ 最終更新 2026年6月25日</p>
+  <nav>
+    <a href="#tokushoho">特定商取引法に基づく表記</a>
+    <a href="#privacy">プライバシーポリシー</a>
+    <a href="#refund">返金について</a>
+  </nav>
+
+  <section id="tokushoho">
+    <h2>特定商取引法に基づく表記</h2>
+    <dl>
+      <dt>販売事業者名</dt><dd>合同会社ドラポケット（DORA POCKET, LLC）</dd>
+      <dt>運営統括責任者</dt><dd>請求があった場合は、遅滞なく開示いたします。</dd>
+      <dt>所在地</dt><dd>〒150-0021 東京都渋谷区恵比寿西2-4-8 WIND恵比寿ビル8F</dd>
+      <dt>連絡先（メール）</dt><dd><a href="mailto:contact@dra-pocket.com">contact@dra-pocket.com</a></dd>
+      <dt>電話番号</dt><dd>請求があった場合は、遅滞なく開示いたします。</dd>
+      <dt>販売価格</dt><dd>各コンテンツの価格は、App Store 上およびアプリ内の購入画面に表示します（買切 ¥1,200）。</dd>
+      <dt>商品代金以外の必要料金</dt><dd>なし（通信料は利用者のご負担となります）</dd>
+      <dt>支払方法</dt><dd>Apple の App Store を通じたアプリ内購入（In-App Purchase）</dd>
+      <dt>支払時期</dt><dd>購入手続きの完了時に、Apple の定める方法で決済されます。</dd>
+      <dt>商品の引渡時期</dt><dd>購入手続きの完了後、ただちにアプリ内でご利用いただけます。</dd>
+      <dt>返品・キャンセル</dt><dd>デジタルコンテンツの性質上、購入後の返品・交換はお受けできません。返金は Apple の App Store の返金ポリシーに従います（<a href="#refund">返金について</a>）。</dd>
+      <dt>動作環境</dt><dd>iOS（対応バージョン・対応端末は App Store の製品ページをご確認ください）</dd>
+    </dl>
+  </section>
+
+  <section id="privacy">
+    <h2>プライバシーポリシー</h2>
+    <p>合同会社ドラポケット（以下「当社」）は、iOS アプリ「とばり / Tobari」における利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+    <h3>収集する情報</h3>
+    <p>本アプリは、利用者から個人情報を収集しません。解析ツール、広告、トラッキング、外部サーバーへの通信機能を一切備えていません。</p>
+    <h3>端末内に保存される情報</h3>
+    <p>購入状態（買切コンテンツの解放有無）を端末内にのみ保存します。当社や第三者に送信されることはありません。</p>
+    <h3>アプリ内購入について</h3>
+    <p>有料コンテンツの購入は Apple の App Store（In-App Purchase）を通じて行われ、決済情報は Apple によって処理されます。当社が決済情報を受領・保管することはありません（<a href="https://www.apple.com/legal/privacy/">Apple のプライバシーポリシー</a>）。</p>
+    <h3>第三者提供・子どものプライバシー</h3>
+    <p>当社は個人情報を取得しないため、第三者に提供する情報はありません。年齢を問わず安心してご利用いただけます。</p>
+    <h3>改定</h3>
+    <p>本ポリシーは必要に応じて改定することがあります。重要な変更がある場合は本ページにて告知します。</p>
+  </section>
+
+  <section id="refund">
+    <h2>返金について</h2>
+    <p>「とばり / Tobari」の有料コンテンツは、Apple の App Store（アプリ内購入）を通じて販売される買切のデジタルコンテンツです。</p>
+    <h3>返金の取り扱い</h3>
+    <p>返金は Apple がその規定に基づいて処理します。ご希望の場合は <a href="https://reportaproblem.apple.com/">Apple の「問題を報告」ページ</a>から直接ご申請ください。当社は Apple を通さずに直接返金を行うことはできません。</p>
+    <h3>不具合があった場合</h3>
+    <p>音が再生されない・購入が反映されない等の場合は、アプリの再起動と「購入を復元」をお試しください。解決しない場合は下記までご連絡ください。状況を確認のうえ、誠実に対応いたします。</p>
+  </section>
+
+  <footer>
+    合同会社ドラポケット<br>
+    〒150-0021 東京都渋谷区恵比寿西2-4-8 WIND恵比寿ビル8F<br>
+    お問い合わせ: <a href="mailto:contact@dra-pocket.com">contact@dra-pocket.com</a>
+  </footer>
 </body>
 </html>
